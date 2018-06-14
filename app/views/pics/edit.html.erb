@@ -1,18 +1,12 @@
-<%= image_tag @pic.image.url%>
-<div class="col-md-8 col-md-offset-2" id="edit_page">
-  <div class="row">
+<div class="row" id="pic_show">
+  <div class="col-md-8 col-md-offset-2">
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h1>Fix Pic</h1>
+      <h1> Fix Pic </h1>
+      <div class="panel heading pic_image">
+        <%= image_tag @pic.image.url %>
       </div>
       <div class="panel-body">
-        <div class="current_image">
-          <strong class="center">Right Now</strong>
 
-
-
-
-        </div>
         <%= render 'form' %>
       </div>
     </div>
